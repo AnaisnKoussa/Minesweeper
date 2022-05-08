@@ -1,0 +1,65 @@
+#minesweeper {
+    display: block;
+    width: 505px;
+    height: 505px;
+    margin: auto;
+    border: 16px ridge lightgray;
+    background-color: lightgray;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.case {
+    background-color: lightgrey;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    border-bottom: 3px dotted black;
+    border-right: 3px dotted black;
+}
+
+.unselected {
+    border: outset;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 57px;
+    height: 57px;
+}
+
+.above {
+    z-index: 99;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.above:hover {
+    opacity: 0;
+}
+
+.mine {
+    background-image: url('mine.png');
+    background-size: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.number-one {
+    color: blue;
+}
+
+.number-two {
+    color: green;
+}
+
+.number-three {
+    color: red;
+}
